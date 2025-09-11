@@ -1,0 +1,70 @@
+
+
+
+.bg_black {
+    background-color:rgb(61, 76, 97);
+    
+}
+
+.hero_bg {
+    background: url(../img/hero_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.white{
+    color:white;
+}
+
+
+.webdev-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/webdev-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.mobapp-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mobile-apps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.ui-ux-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/ui-ux-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+.enlarge {
+    transition: transform 0.3s ease;
+}
+
+
+.enlarge:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+p {
+    color: white;
+}
