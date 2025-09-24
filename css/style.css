@@ -1,5 +1,51 @@
 
 
+.options{
+    line-height: 2.5;
+
+}
+
+
+
+
+.options:hover {
+    color: black;
+
+}
+
+
+.options_slide{
+    line-height: 2.5;
+    transition: transform 0.2s ease;
+}
+
+
+
+
+.options_slide:hover {
+    transform: translateX(3%)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .bg_black {
     background-color:rgb(61, 76, 97);
