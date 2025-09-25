@@ -21,17 +21,17 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item options_slide">
-          <a class="enlarge white options" aria-current="page" href="#">Home</a>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options" aria-current="page" href="#">Home</a>
         </li>
-        <li class="nav-item options_slide">
-          <a class="enlarge white options" href="#">Services</a>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options" href="#">Services</a>
         </li>
-        <li class="nav-item options_slide">
-          <a class="enlarge white options" href="#">Portfolio</a>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options" href="#">Portfolio</a>
         </li>
-        <li class="nav-item options_slide">
-          <a class="enlarge white options" href="#">Contact</a>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -57,9 +57,9 @@
   <div class="container">
     <h2 class="enlarge text-center mb-5">Our Services</h2>
     <div class="row">
-      
+      <p style = "color: black; text-align: justify;" class = "py-4"> Welcome to Innotech, your trusted partner in innovative technology solutions. We specialize in delivering cutting-edge web development, mobile app creation, and UI/UX design services tailored to help your business thrive in the digital age. Our team is dedicated to transforming your ideas into impactful digital experiences, ensuring quality, creativity, and reliability every step of the way. Discover how Innotech can elevate your brand and drive your success today.</p>
       <!-- Service 1 -->
-      <div class="enlarge  col-md-4 mb-4">
+      <div class="box enlarge  col-md-4 mb-4">
         <div class="webdev-bg card h-100">
           <div class="card-body">
             <h5 class="white card-title">Web Development</h5>
@@ -71,7 +71,7 @@
       </div>
 
       <!-- Service 2 -->
-      <div class="enlarge  col-md-4 mb-4">
+      <div class=" box enlarge col-md-4 mb-4">
         <div class="mobapp-bg card h-100">
           <div class="card-body">
             <h5 class="white card-title">Mobile Apps</h5>
@@ -83,7 +83,7 @@
       </div>
 
       <!-- Service 3 -->
-      <div class="enlarge col-md-4 mb-4">
+      <div class="box enlarge col-md-4 mb-4">
         <div class="ui-ux-bg card h-100">
           <div class="card-body">
             <h5 class=" white card-title">UI/UX Design</h5>
@@ -110,8 +110,8 @@
       
       <!-- Portfolio Item 1 -->
       <div class="enlarge col-sm-6 col-lg-3">
-        <div class="card h-100">
-          <img src="images/project1.jpg" class="card-img-top img-fluid" alt="Project 1">
+        <div class=" gradient card h-100">
+          <img src="img/port-1.webp" class="card-img-top img-fluid " alt="Project 1">
           <div class="card-body">
             <p class="card-text text-center">E-Commerce Website</p>
           </div>
@@ -120,8 +120,8 @@
 
       <!-- Portfolio Item 2 -->
       <div class="enlarge col-sm-6 col-lg-3">
-        <div class="card h-100">
-          <img src="images/project2.jpg" class="card-img-top img-fluid" alt="Project 2">
+        <div class="gradient card h-100">
+          <img src="img/port-2.png" class="card-img-top img-fluid" alt="Project 2">
           <div class="card-body">
             <p class="card-text text-center">Mobile App Design</p>
           </div>
@@ -130,8 +130,8 @@
 
       <!-- Portfolio Item 3 -->
       <div class="enlarge col-sm-6 col-lg-3">
-        <div class="card h-100">
-          <img src="images/project3.jpg" class="card-img-top img-fluid" alt="Project 3">
+        <div class="gradient card h-100">
+          <img src="img/port-3.jpg" class="card-img-top img-fluid" alt="Project 3">
           <div class="card-body">
             <p class="card-text text-center">Branding & Identity</p>
           </div>
@@ -140,8 +140,8 @@
 
       <!-- Portfolio Item 4 -->
       <div class="enlarge col-sm-6 col-lg-3">
-        <div class="card h-100">
-          <img src="images/project4.jpg" class="card-img-top img-fluid" alt="Project 4">
+        <div class="gradient card h-100">
+          <img src="img/port-4.jpg" class="card-img-top img-fluid" alt="Project 4">
           <div class="card-body">
             <p class="card-text text-center">Landing Page</p>
           </div>
@@ -226,9 +226,28 @@
   </div>
 </footer>
 
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
+
+    function transitionInSequence(elements, delay) {
+      elements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('active');
+        }, index * delay);
+      });
+    }
+
+    setTimeout(() => {
+      transitionInSequence(boxes, 200); // 200ms delay between each box
+    }, 10);
+
+   
 
 
+  });
 
+</script>
 
 
 
