@@ -112,13 +112,27 @@
 
 
 .enlarge {
-    transition: transform 0.3s ease;    
+    transition: transform 0.3s ease; 
 }
 
 
 .enlarge:hover{
     transform: scale(1.05);
+    
 }
+
+
+.enlarge1 {
+    transition: transform 0.3s ease; 
+    transition: translateY 0.3s ease;
+}
+
+
+.enlarge1:hover {
+    transform: scale(1.05) translateY(-90px);
+}
+
+
 
 .box {
     display: inline-block;
