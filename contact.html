@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg_black navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+  <a class="navbar-brand white" href="#">INNOTECH</a>
+ 
+    <button class="enlarge navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero_bg bg_purple text-white text-center py-5">
+  <div class="container">
+    <h1 class="enlarge display-4 fw-bold mb-3">Innovate Your Future with Innotech</h1>
+    <p class="enlarge lead mb-4">Cutting-edge solutions for modern businesses.</p>
+    <a href="#" class="enlarge btn btn-light btn-lg">Get Started</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="enlarge text-center mb-4">Contact Us</h2>
+    <form class="needs-validation" novalidate>
+      
+      <div class="mb-3">
+        <label for="name" class="form-label">Name *</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        <div class="invalid-feedback">
+          Please enter your name.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email *</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+        <div class="invalid-feedback">
+          Please enter a valid email address.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Message *</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+        <div class="invalid-feedback">
+          Please enter your message.
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <!-- Social Media Links -->
+    <div class="mb-3">
+      <a href="#" class="text-white mx-3" aria-label="Facebook" target="_blank" rel="noopener">
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+      <a href="#" class="text-white mx-3" aria-label="Twitter" target="_blank" rel="noopener">
+        <i class="bi bi-twitter fs-4"></i>
+      </a>
+      <a href="#" class="text-white mx-3" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <i class="bi bi-linkedin fs-4"></i>
+      </a>
+      <a href="#" class="text-white mx-3" aria-label="Instagram" target="_blank" rel="noopener">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div>
+      &copy; 2025 Innotech. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
+
+    function transitionInSequence(elements, delay) {
+      elements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('active');
+        }, index * delay);
+      });
+    }
+
+    setTimeout(() => {
+      transitionInSequence(boxes, 200); // 200ms delay between each box
+    }, 10);
+
+   
+
+
+  });
+
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

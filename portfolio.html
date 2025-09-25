@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="bg_black navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+  <a class="navbar-brand white" href="#">INNOTECH</a>
+ 
+    <button class="enlarge navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item options_slide cont">
+          <a class="enlarge  options nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero_bg bg_purple text-white text-center py-5">
+  <div class="container">
+    <h1 class="enlarge display-4 fw-bold mb-3">Innovate Your Future with Innotech</h1>
+    <p class="enlarge lead mb-4">Cutting-edge solutions for modern businesses.</p>
+    <a href="#" class="enlarge btn btn-light btn-lg">Get Started</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Portfolio Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="enlarge text-center mb-5">Our Portfolio</h2>
+    <p style = "color: black; text-align: justify" > Explore our portfolio to discover a diverse range of projects that showcase Innotech’s commitment to innovation, quality, and client success. From dynamic websites and intuitive mobile applications to engaging UI/UX designs, each project reflects our passion for delivering impactful digital solutions. Let our work inspire your next big idea and see how Innotech can help bring your vision to life.</p>
+    <div class="row g-5">
+      
+      <!-- Portfolio Item 1 -->
+      <div class="box enlarge col-sm-6 col-lg-3">
+        <div class=" gradient card h-100">
+          <img src="img/port-1.webp" class="card-img-top img-fluid " alt="Project 1">
+          <div class="card-body">
+            <p class="card-text text-center">E-Commerce Website</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 2 -->
+      <div class="box enlarge col-sm-6 col-lg-3">
+        <div class="gradient card h-100">
+          <img src="img/port-2.png" class="card-img-top img-fluid" alt="Project 2">
+          <div class="card-body">
+            <p class="card-text text-center">Mobile App Design</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="box enlarge col-sm-6 col-lg-3">
+        <div class="gradient card h-100">
+          <img src="img/port-3.jpg" class="card-img-top img-fluid" alt="Project 3">
+          <div class="card-body">
+            <p class="card-text text-center">Branding & Identity</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 4 -->
+      <div class="box   enlarge col-sm-6 col-lg-3">
+        <div class="gradient card h-100">
+          <img src="img/port-4.jpg" class="card-img-top img-fluid" alt="Project 4">
+          <div class="card-body">
+            <p class="card-text text-center">Landing Page</p>
+          </div>
+        </div>
+      </div>
+
+    </div>        
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <!-- Social Media Links -->
+    <div class="mb-3">
+      <a href="#" class="text-white mx-3" aria-label="Facebook" target="_blank" rel="noopener">
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+      <a href="#" class="text-white mx-3" aria-label="Twitter" target="_blank" rel="noopener">
+        <i class="bi bi-twitter fs-4"></i>
+      </a>
+      <a href="#" class="text-white mx-3" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <i class="bi bi-linkedin fs-4"></i>
+      </a>
+      <a href="#" class="text-white mx-3" aria-label="Instagram" target="_blank" rel="noopener">
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div>
+      &copy; 2025 Innotech. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
+
+    function transitionInSequence(elements, delay) {
+      elements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('active');
+        }, index * delay);
+      });
+    }
+
+    setTimeout(() => {
+      transitionInSequence(boxes, 200); // 200ms delay between each box
+    }, 10);
+
+   
+
+
+  });
+
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
