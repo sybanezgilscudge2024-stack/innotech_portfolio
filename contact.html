@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY Portfolio</title>
@@ -39,22 +39,13 @@
 </nav>
 
 
-<section class="hero_bg bg_purple text-white text-center py-5">
-  <div class="container">
-    <h1 class="enlarge display-4 fw-bold mb-3">Innovate Your Future with Innotech</h1>
-    <p class="enlarge lead mb-4">Cutting-edge solutions for modern businesses.</p>
-    <a href="#" class="enlarge btn btn-light btn-lg">Get Started</a>
-  </div>
-</section>
 
 
 
 
 
-
-
-<section class="py-5 bg-light">
-  <div class="container">
+<section class=" bg-light cost">
+  <div class="upper pos container">
     <h2 class="enlarge text-center mb-4">Contact Us</h2>
     <form class="needs-validation" novalidate>
       
@@ -88,22 +79,20 @@
 </section>
 
 
-
-
-<footer class="bg-dark text-white py-4">
+<footer class="bg-dark text-white py-4 mt-auto lel">
   <div class="container text-center">
     <!-- Social Media Links -->
     <div class="mb-3">
-      <a href="#" class="text-white mx-3" aria-label="Facebook" target="_blank" rel="noopener">
+      <a href="https://www.facebook.com/gilscudge.ybanez" class="text-white mx-3" aria-label="Facebook" target="_blank" rel="noopener">
         <i class="bi bi-facebook fs-4"></i>
       </a>
-      <a href="#" class="text-white mx-3" aria-label="Twitter" target="_blank" rel="noopener">
+      <a href="https://x.com/Hyousuke45?t=Gw9jPoiAcv26ZYK-YBOicA&s=09" class="text-white mx-3" aria-label="Twitter" target="_blank" rel="noopener">
         <i class="bi bi-twitter fs-4"></i>
       </a>
-      <a href="#" class="text-white mx-3" aria-label="LinkedIn" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/" class="text-white mx-3" aria-label="LinkedIn" target="_blank" rel="noopener">
         <i class="bi bi-linkedin fs-4"></i>
       </a>
-      <a href="#" class="text-white mx-3" aria-label="Instagram" target="_blank" rel="noopener">
+      <a href="https://www.instagram.com/gscudgey/" class="text-white mx-3" aria-label="Instagram" target="_blank" rel="noopener">
         <i class="bi bi-instagram fs-4"></i>
       </a>
     </div>
@@ -113,11 +102,20 @@
       &copy; 2025 Innotech. All rights reserved.
     </div>
   </div>
+  </div>
 </footer>
+
+
+
+
+
 
  <script>
   document.addEventListener('DOMContentLoaded', function() {
     const boxes = document.querySelectorAll('.box');
+    const upperSection = document.querySelector('.upper');
+    
+
 
     function transitionInSequence(elements, delay) {
       elements.forEach((element, index) => {
@@ -127,12 +125,24 @@
       });
     }
 
+
+    function uppersequence(elements, delay) {
+      elements.forEach((element, index) => {
+        setTimeout(() => {
+          element.classList.add('upperactive');
+        }, index * delay);
+      });
+    }
+
+
+
+    setTimeout(() => {
+  uppersequence([upperSection], 200); // 200ms delay between each box
+    }, 10);
+
     setTimeout(() => {
       transitionInSequence(boxes, 200); // 200ms delay between each box
     }, 10);
-
-   
-
 
   });
 

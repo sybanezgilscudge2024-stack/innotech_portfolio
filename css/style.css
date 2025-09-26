@@ -37,9 +37,14 @@
     
 }
 
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
 
-
-
+/* optional: subtle white border so the button stands out on dark backgrounds */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.12);
+}
 
 
 
@@ -60,12 +65,12 @@
 
 
 .bg_black {
-    background-color:rgb(61, 76, 97);
+    background-color:rgb(33, 49, 65);
     
 }
 
 .hero_bg {
-    background: url(../img/hero_bg.jpg);
+    background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -105,6 +110,156 @@
 }
 
 
+
+.cyber-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cyber.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.iot-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/iot.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.blockchain-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/blockchain.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.data-an-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/data-an.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.augmented-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/augmented.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.vr-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/VR.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.robotics-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/robotics.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.edge-comp-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/edge-comp.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.devops-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/devops.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bigdata-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bigdata.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fiveG-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/5g.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.automations-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/automations.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.digimarket-bg{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/digimarket.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .gradient{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(29, 17, 48));
 }
@@ -129,7 +284,7 @@
 
 
 .enlarge1:hover {
-    transform: scale(1.05) translateY(-90px);
+    transform: scale(1.05) translateY(-80px);
 }
 
 
@@ -148,7 +303,35 @@
 }
 
 
+.upperactive {
+    transform: translateY(-80px);
+    opacity: 1;
+}
+
+
 
 p {
     color: white;
+}
+
+
+.upper {
+
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1), opacity 1.2s ease;
+}
+
+.pos {
+    position: relative;
+    bottom: -100px;
+}
+
+
+.lel {
+    position: flex;
+    margin-top: 500vh
+}
+
+.cost {
+    padding-top: 3rem !important;
+    padding-bottom: 30rem !important;
 }
